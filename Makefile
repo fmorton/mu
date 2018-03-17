@@ -82,10 +82,10 @@ translateall:
 	@echo "\nNew messages.pot file created."
 	@echo "Remember to update the translation strings found in the locale directory."
 
-win32: check
+win32: clean
 	@echo "\nBuilding 32bit Windows installer."
 	python win_installer.py 32
 
-win64: check
+win64: clean
 	@echo "\nBuilding 64bit Windows installer."
 	python win_installer.py 64
